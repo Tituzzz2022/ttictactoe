@@ -10,19 +10,21 @@
   </head>
 
   <body>
+    <img class="gameOver d-none" id="gameOver" src="img/game Over.png">
+    <button onclick="restart()" id="restart-btn" class="restart-btn d-none">Restart</button>
     <div class="playerPanel">
       <div class="playerInactive" id="playerOne"><img src="img/circle.png" />Player 1</div>
       <div id="playerTwo"><img src="img/cross.png" />Player 2</div>
     </div>
 
-    <div class="horizontal-line" style="top: 341px"></div>
-    <div class="horizontal-line" style="top: 479px"></div>
-    <div class="horizontal-line" style="top: 631px"></div>
-    <div class="horizontal-line make-vertical" style="top: 486px"></div>
-    <div class="horizontal-line make-vertical" style="left: 393px;top: 486px"></div>
-    <div class="horizontal-line make-vertical" style="right: 386px;top: 486px"></div>
-    <div class="horizontal-line make-spin45deg" style="top: 486px"></div>
-    <div class="horizontal-line make-spin135deg" style="top: 486px"></div>
+    <div id="line-1"class="horizontal-line" style="top: 341px"></div>
+    <div id="line-2"class="horizontal-line" style="top: 479px"></div>
+    <div id="line-3"class="horizontal-line" style="top: 631px"></div>
+    <div id="line-4"class="horizontal-line make-vertical" style="top: 486px"></div>
+    <div id="line-5"class="horizontal-line make-vertical" style="left: 393px;top: 486px"></div>
+    <div id="line-6"class="horizontal-line make-vertical" style="right: 386px;top: 486px"></div>
+    <div id="line-7"class="horizontal-line make-spin45deg" style="top: 486px"></div>
+    <div id="line-8"class="horizontal-line make-spin135deg" style="top: 486px"></div>
     <table>
       <tr>
         <td onclick="fillShape(0)">
