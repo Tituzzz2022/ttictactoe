@@ -1,6 +1,15 @@
+body {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+}
+
 table {
-    border-collapse: collapse;
-  }
+  border-collapse: collapse;
+}
 
 tr {
   width: 399px;
@@ -15,7 +24,7 @@ td {
 }
 
 td:hover {
-  background-color: rgba(25,221,0,0.1);
+  background-color: rgba(25, 221, 0, 0.1);
 }
 
 tr:first-child td {
@@ -31,7 +40,7 @@ tr:last-child td {
 tr td:last-child {
   border-right: 0;
 }
-.shape{
+.shape {
   position: absolute;
   width: 100px;
   height: 100px;
@@ -39,9 +48,48 @@ tr td:last-child {
   right: 0;
   top: 15px;
   bottom: 0;
-
 }
 
 .d-none {
-display: none;
+  display: none;
+}
+
+.playerPanel {
+  display: flex;
+  font-size: 32px;
+}
+
+.playerPanel div {
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+  margin-left: 20px;
+  margin-bottom: 30px;
+}
+
+.playerPanel img {
+  width: 60px;
+  height: 60px;
+  margin-right: 20px;
+}
+
+.playerInactive {
+  opacity: 0.5;
+}
+
+.horizontal-line {
+  position: absolute;
+  height: 10px;
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 300px;
+  z-index: 1;
+}
+.make-vertical{
+  transform: rotate(90deg);
+}
+.make-spin45deg{
+  transform: rotate(45deg);
+}
+.make-spin135deg{
+  transform: rotate(135deg);
 }
